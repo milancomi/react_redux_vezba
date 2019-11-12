@@ -1,0 +1,35 @@
+Redosled
+1. U Reduxu folder "IceCream"
+2. Unutar foldera fajlovi "Action", "Reducer","Types"
+3. U index.js se ubaci export za  IceCreamActions
+4. rootReducer.js
+5. store.js
+6. container se pravi
+7. pozove se container u App.js
+ZNACENJA
+Types = Konstante funkcija
+
+Actions = Funkcije, Importuje se Types
+
+Reducer = Importuje se Types, inicializuje initialState
+prima state i akciju, vraca izvrsenu akciju na state
+Postavlja se switch case na osnovu action(type)
+...state = prenosi sve inic state
+
+rootReducer.js = kombinuju se svi reduceri
+
+store = rootReducer se ubacuje u createStore
+
+index.js(za sve isti fail)
+
+Container = import { buyIceCream } from '../redux'
+gadja na index.js, navede se tacno promenljiva
+connect poveze redux state i slicno
+
+Snippeti
+rfce - Creates a React Functional Component 
+
+
+container->index.js->action->type
+
+provider ->store->rootReducer
